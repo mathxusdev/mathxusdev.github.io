@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Biryani", sans-serif;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+/*Page navigation*/
+
+#menu {
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    padding-left: 10px;
+}
+
+#menu .link {
+    display: inline-block;
+    margin-top: .5vh;
+}
+
+#menu .link a {
+    text-decoration: none;
+    margin-right: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 83%;
+    transition: color .3s linear;
+}
+
+#menu a:hover {
+    color: #d38725;
+}
+
+#menu .link:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 160px;
+    padding: 5px;
+}
+
+#acc img {
+    border-radius: 50%;
+    width: 5vh;
+    position: absolute;
+    right: .5vw;
+    transition: box-shadow .3s;
+}
+
+#acc img:hover {
+    box-shadow: 0 0 15px rgb(56, 56, 56);
+}
+
+/*Page navigation*/
+
+/*Index*/
+#vchessIndex {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: vchessOpacity 4s forwards;
+}
+
+@keyframes vchessOpacity {
+    to {opacity: 1;}
+}
+
+#vchessDescription {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    animation: vchessDescriptionOpacity 4s .5s forwards;
+}
+
+@keyframes vchessDescriptionOpacity {
+    to {opacity: 1;}
+}
+
+/*Index*/
